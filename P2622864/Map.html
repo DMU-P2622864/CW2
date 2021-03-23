@@ -71,7 +71,8 @@
          <map name="multilinks">
             <!--area defines a linkable object-->
             <!--rect:indicates rectangular area in image
-            coord are number in pixel from left and top definite point in img-->
+            coord are number in pixel from left and top definite point in img that are linked to the
+            others external page-->
             <area shape="rect" coords="0,0,465,445" href="west.html" alt="west-page">
             <area shape="rect" coords="465,0,960,445" href="north.html" alt="north-page">
             <area shape="rect" coords="0,445,465,880" href="south.html" alt="south-page">
@@ -80,6 +81,7 @@
      </section>
 
      <section>
+       <!--h2 and text on the left side -creating with flexbox model,styled in css with media query for a mobile screen-->
        <h2>GEOGRAPHY</h2>
          <div class="flex-container-g">
             <div class="item-g">
@@ -88,8 +90,9 @@
                  Geologically, Iceland is part of the Mid-Atlantic Ridge, a ridge along which the oceanic crust spreads and forms new oceanic crust. This part of the mid-ocean ridge is located above a mantle plume, causing Iceland to be subaerial (above the surface of the sea).
                  The ridge marks the boundary between the Eurasian and North American Plates, and Iceland was created by rifting and accretion through volcanism along the ridge. <span class="ref">(Iceland, 2021)</span>  </p>
             </div>
+            <!--img display on the right side of the flexbox  model,styled in css with media query for a mobile screen-->
             <div class="item2-g">
-              <img src="img/geology.jpg" alt="map of iceland with lattitudine and longitudine">
+              <img src="img/geology.jpg" alt="map of iceland with latitudine and longitudine">
             </div>
         </div>
 
@@ -118,17 +121,21 @@
                    <img src="img/First-settl.png" alt="first settlement">
             </div>
           </div>
+      <!--end of flexbox-->
 
+      <!--Video of geysir controls palyback up to the user if play or not-->
           <div>
-             <video controls autoplay poster="img/geysir.jpg">
+             <video controls poster="img/geysir.jpg">
                 <source src="vid/geysir.mp4" type="video/mp4">
                 <source src="vid/geysir.ogv" type="video/ogv">
                 <source src="vid/geysir.webm" type="video/webm">
             </video>
+            <!--video fallback-->
                 <p class="watch">If you cannot watch the video. <br>Click <a href="vid/geysir.mp4">here</a> to download the video. </p>
         </div>
        </section>
 
+      <!--website site creator and contact-->
        <footer>
           <div class="footer">
              <div class="foot">

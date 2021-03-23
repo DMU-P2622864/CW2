@@ -1,15 +1,21 @@
 <!DOCTYPE html>
+ <!--the lang is setted in English, from left to right-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!--it scales the layout to be mobile-friendly-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--describing what the website is about-->
     <meta name="description" content="Visit Iceland website for all travellers that love adventure.">
+    <!-- the style of the fonts linked to google external -->
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <!--the style of the webpage's layout linked to the external style stylesheet CSS-->
     <link href="css/master.css"  rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
     <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <!--title of the webpage-->
     <title>Iceland</title>
   </head>
 
@@ -21,8 +27,10 @@
 
   <body>
     <!--Starting fixed menu-->
+    <!--Creating a checkbox that it is hidden behind the hamburger menu-->
     <input type="checkbox" id="hamburger"/>
      <label class="menuicon" for="hamburger">
+       <!--create span and style in css as span after and before-->
        <span></span>
      </label>
 
@@ -32,18 +40,20 @@
   	   </div> <!--/end logo-->
      </div><!--/end bar-->
 
-
+    <!--starting of the navigation menu and submenu-->
      <nav class="menu-visibility">
+           <!--menu-->
            <ul>
                <li><a class="home" href="Homepage.html">HOME</a></li>
                <li><a href="Map.html">MAP</a>
+                 <!--dropdown submenu map-->
                    <ul>
                        <li><a href="west.html">WEST</a></li>
                        <li><a href="north.html">NORTH</a></li>
                        <li><a href="south.html">SOUTH</a></li>
                        <li><a href="east.html">EAST</a></li>
                    </ul>
-                                        </li>
+                  <!--end submenu-->    </li>
                                         <li>
                    <li><a href="language.html">LANGUAGE</a></li>
                    <li><a href="gallery.html">GALLERY</a></li>
@@ -55,6 +65,7 @@
      <!--Finishing fixed menu-->
     <header class="pages">
         <h1> ICELAND</h1>
+        <!--creating icons to link to external website-->
           <div class="containericon">
            <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
            <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
@@ -77,18 +88,21 @@
           <br><br><br> Most Icelanders speak English, so you will have no problems if you do not speak any Icelandic. However, any attempts to speak the local language will be much appreciated. <span class="ref">(Lonely Planet,2015)</span> </p>
 
          <h2 class="basic">HEAR HOW PRONUONCE</h2>
-
+          <!-- texts, audios and icons display on the left side for laptop
+          taking the entire width of mobile screen, styled as floting elements in css-->
           <div class="cont">
            <div class="lang-cont">
              <div class="floatfix">
               <h3 class="lang">Hello&nbsp;=&nbsp;Halló&nbsp;=</h3>
               <img onclick="playsound()" class="speak" src="icons/speaker.png" alt="audio-icon">
+              <!--do not display the controls on the audio elements styled below with js-->
               <audio id="audio" style="display:none">
                  <source src="aud/Hello.mp3" type="audio/mpeg">
                  <source src="aud/Hello.ogg" type="audio/ogg">
                  <source src="aud/Hello.wav" type="audio/wav">
               </audio>
              </div>
+             <!--fallback in case the audios do notwork-->
                <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/Hello.mp3">here</a> to download the audio.</p>
 
 
@@ -152,7 +166,9 @@
 
                <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/Sorry.mp3">here</a> to download the audio.</p>
        </div>
+       <!--finishing audios and text-->
 
+       <!-- Legend display on the right part of the laptop screen, resize on the mobile screen -->
        <div class="right-side">
                <h3 class="reading-iceland">Reading Icelandic</h3>
          <div class="read">
@@ -175,6 +191,7 @@
        </div>
      </div>
 
+  <!--website site creator and contact-->
    <footer>
      <div class="footer">
 
@@ -192,11 +209,11 @@
      </div>
     </footer>
    </article>
+
     <script>
 
-    //hidden the controls on audio element and replace the controls
-    //on icons so when the user click on the icons that display the audio, the audio will start.
-
+    // When the user click on the icons that display the audio, the audio will start.
+    // To play the sound I followed the lab tutorial of week 18-19, by getting the element by id.
       playsound = () => {
 
         let audio = document.getElementById('audio');
