@@ -675,7 +675,7 @@ font-family: 'Amatic SC', cursive;
 /*-----end first floating*/
 
 
-/*styling the 'fake' box on the right*/
+/*styling the 'fake' box on the right- legend of the reading icelandic-*/
 .reading-iceland {
   padding-left: 50px;
 }
@@ -709,6 +709,15 @@ h5{
   display:block;
   clear:both;
 }
+
+@media screen and (max-width:400px){
+  /*display the reading icelandic legend at thecenter*/
+  .right-side{
+    margin:30px 30px 30px 30px;
+  }
+
+}
+
 /*end 2floating or floating right*/
 
 /*start 3floating or floating left*/
