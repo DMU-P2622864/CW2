@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Iceland website for all travellers that love adventure.">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="css/master.css"  rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <title>Iceland</title>
+</head>
+
+
+
+  <body>
+    <!--Starting fixed menu-->
+  <section>
+    <input type="checkbox" id="hamburger"/>
+     <label class="menuicon" for="hamburger">
+       <span></span>
+     </label>
+
+     <div id="bar">
+       <div id="logo">
+          <a href="Homepage.html"><img class="logo" src="icons/puffin.png" alt="logo"></a>
+       </div> <!--/end logo-->
+     </div><!--/end bar-->
+
+
+     <nav class="menu-visibility">
+           <ul>
+               <li><a class="home" href="Homepage.html">HOME</a></li>
+               <li><a href="Map.html">MAP</a>
+                   <ul>
+                       <li><a href="west.html">WEST</a></li>
+                       <li><a href="north.html">NORTH</a></li>
+                       <li><a href="south.html">SOUTH</a></li>
+                       <li><a href="east.html">EAST</a></li>
+                   </ul>
+                                        </li>
+                                        <li>
+                   <li><a href="language.html">LANGUAGE</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="Contact.html">CONTACT</a></li>
+           </ul>
+      </nav>
+    </section>
+
+     <!--Finishing fixed menu-->
+  <header>
+        <h1> ICELAND</h1>
+          <div class="containericon">
+           <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
+           <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
+           <a href="http://www.road.is/travel-info/road-conditions-and-weather/"><img class="icon" id="car" src="icons/car.png" alt="car_icon"> </a>
+           <a href="https://straeto.is/en"><img class="icon" src="icons/info.png" id="info" alt="info_icon"></a>
+         </div>
+  </header>
+
+
+<!--finishing header-->
+
+  <article>
+  <h1>MAP</h1>
+
+    <!--maping the image with the element map-->
+    <img class="map" src="img/map.png" alt="map" usemap="#multilinks">
+
+   <!--define multiple link-points with map element.Attribute-value 'multilinks'
+     is the connection between the map and img element.-->
+    <map name="multilinks">
+  <!--area defines a linkable object-->
+  <!--rect:indicates rectangular area in image
+      coord are number in pixel from left and top definite point in img-->
+
+      <area shape="rect" coords="630,640,740,710" href="#Höfn" alt="Höfn">
+      <area shape="rect" coords="750,480,870,560" href="#Stokksnes" alt="Stokksnes">
+      <area shape="rect" coords="710,320,810,390" href="#Kollumúli" alt="Kollumúli">
+      <area shape="rect" coords="830,220,940,290" href="#Eskifjörður" alt="Eskifjörður">
+
+    </map>
+
+
+    <section>
+      <h1>EAST</h1>
+           <div class="flex-container">
+
+             <div class="item">
+                  <a name="Höfn"><h2>Höfn</h2></a>
+                  <img class="img-east" src="img/Höfn.png" alt="Höfn">
+                      <p class="itemP"> Between Höfn and Djúpivogur, curious visitors will arrive at what appears to be a remote <strong>Viking village</strong>in pristine condition. In reality, it is a film set for an Icelandic movie that was never filmed, but you’d definitely be forgiven for mistaking it for the real thing.
+                       The most striking feature of the village is the buildings, which ape the architecture of the period magnificently. Guests can pry open the wooden doors and find themselves within a range of rooms that look almost indistinguishable from the real thing. But this is not the only piece of period detail; the settlement also comes equipped with a dungeon located beneath an enormous artificial boulder. <span class="ref">(Lonely Planet,2015)</span> </p>
+
+                  <a name="Stokksnes"><h2>Stokksnes</h2></a>
+                  <img class="img-east" src="img/Stokksnes.png" alt="Stokksnes">
+                      <p class="itemP"><strong>Stokksnes</strong> peninsula in Southeast Iceland, is one of the country’s most breathtaking mountains. With peaks reaching up to 454 metres (1490 ft), steep cliffs rising from the sides of a stunning lagoon, and black sand beaches all around, it promises to blow away anyone with an appreciation of stark natural beauty.
+                         The best ways to visit Stokksnes would be to rent a car or take a Ring Road tour.Slightly off the beaten track, Stokksnes is less ‘touristy’ than many of Iceland’s other mountains, making it popular with avid photographers.<span class="ref">(Lonely planet,2015)</span> </p>
+
+                  <a name="Kollumúli"><h2>Kollumúli</h2></a>
+                  <img class="img-east" src="img/kollumuli.png" alt="Kollumúli">
+                      <p class="itemP"><strong>Kollumúli</strong>, (602 m) a spur with high cliffs at the outer end of the peninsula between Vopnafjörður and Héraðsflói. Bjarnarey island offshore.</p>
+
+                  <a name="Eskifjörður"><h2>Eskifjörður</h2></a>
+                  <img class="img-east" src="img/Eskifjörður.png" alt="Eskifjörður">
+                      <p class="itemP"><strong>Eskifjordur</strong> is a fishing town of roughly 1100 people in East Iceland. The seafaring museum is worth a visit, located in an old trade house, built in 1816. There you can see artefacts of seafaring and fish working in the Eastern Fjords, bearing witness to the lives of the people in former times.<span class="ref">(Lonely Planet,2015)</span>
+                     </p>
+
+             </div>
+
+              <div class="item2">
+                  <img class="east-map" src="img/east-map.png" alt="east-map">
+              </div>
+
+          </div>
+        </section>
+        <footer>
+          <div class="footer">
+
+             <div class="foot">
+               <img class="dmu" src="icons/dmu.png" alt="puffin">
+
+               <h1 class="name">Roberta Chioccia<br>P. Number: 2622864</h1>
+             </div>
+
+             <div class="foot-icon">
+               <a href="https://www.facebook.com/"> <img class="fb" src="icons/fb.png" alt="facebook-icon"> </a>
+               <a href="https://www.youtube.com/watch?v=rxuOl2khvxY&t=200s"><img class="yt" src="icons/youtube.png" alt="youtube-icon"></a>
+               <a href="https://www.instagram.com/"><img class="insta" src="icons/insta.png" alt="instagram-icon"></a>
+             </div>
+          </div>
+
+        </footer>
+       </article>
+      </body>
+</html>

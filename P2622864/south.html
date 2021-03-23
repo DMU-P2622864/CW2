@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Iceland website for all travellers that love adventure.">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="css/master.css"  rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <title>Iceland</title>
+</head>
+
+
+
+  <body>
+    <!--Starting fixed menu-->
+  <section>
+    <input type="checkbox" id="hamburger"/>
+     <label class="menuicon" for="hamburger">
+       <span></span>
+     </label>
+
+     <div id="bar">
+       <div id="logo">
+          <a href="Homepage.html"><img class="logo" src="icons/puffin.png" alt="logo"></a>
+       </div> <!--/end logo-->
+     </div><!--/end bar-->
+
+
+     <nav class="menu-visibility">
+           <ul>
+               <li><a class="home" href="Homepage.html">HOME</a></li>
+               <li><a href="Map.html">MAP</a>
+                   <ul>
+                       <li><a href="west.html">WEST</a></li>
+                       <li><a href="north.html">NORTH</a></li>
+                       <li><a href="south.html">SOUTH</a></li>
+                       <li><a href="east.html">EAST</a></li>
+                   </ul>
+                                        </li>
+                                        <li>
+                   <li><a href="language.html">LANGUAGE</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="Contact.html">CONTACT</a></li>
+           </ul>
+      </nav>
+    </section>
+
+     <!--Finishing fixed menu-->
+  <header>
+        <h1> ICELAND</h1>
+          <div class="containericon">
+           <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
+           <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
+           <a href="http://www.road.is/travel-info/road-conditions-and-weather/"><img class="icon" id="car" src="icons/car.png" alt="car_icon"> </a>
+           <a href="https://straeto.is/en"><img class="icon" src="icons/info.png" id="info" alt="info_icon"></a>
+         </div>
+  </header>
+
+<!--finishing header-->
+<article>
+  <h1>MAP</h1>
+  <!--hoover-->
+
+    <!--maping the image with the element map-->
+    <img class="map" src="img/map.png" alt="map" usemap="#multilinks">
+
+   <!--define multiple link-points with map element.Attribute-value 'multilinks'
+     is the connection between the map and img element.-->
+  <map name="multilinks">
+  <!--area defines a linkable object-->
+  <!--rect:indicates rectangular area in image
+      coord are number in pixel from left and top definite point in img-->
+      <area shape="rect" coords="70,520,190,600" href="#Geysir" alt="Geysir">
+      <area shape="rect" coords="420,490,580,580" href="#Seljalandsfoss" alt="Seljalandsfoss">
+      <area shape="rect" coords="230,710,340,790" href="#Skógafoss" alt="Skógafoss">
+      <area shape="rect" coords="430,730,550,810" href="#Reynisfjara" alt="Reynisfjara">
+      <area shape="rect" coords="560,740,790,830" href="#Jökulsárlón" alt="Jökulsárlón">
+
+  </map>
+
+
+    <section>
+      <h1>SOUTH</h1>
+
+        <div class="flex-container">
+
+           <div class="item">
+              <a name="Geysir"><h2>Geysir</h2></a>
+              <img class="img-south" src="img/geysir.png" alt="Geysir">
+                    <p class="itemP"> <strong>Geysir</strong> (gay-zeer,which literally means gusher) is one of Iceland's most famous tourist attractions. The original hot-water spout after which all the others geysers are named. Discovered in the <strong>HAUKADALUR GEOTHERMAL REGION </strong>, the Great Geysir has been active for perhaps 800 years, and once gushed water up to 80m into the air.
+                            But the geyser goes through period of lessened activity, which seems to have been the case since 1916. Earthquakes can stimulate activity, though eruptions are rare. Luckily for visitors, the very reliable geyser,<strong> STROKKUR</strong> site alongside. You rarely have to wait more than 5 to 10 minutes for the hot spring to shoot an impressive 15m to 30m
+                            plume before vanishing down its enormous hole.  The undulating, hissing geothermal area containing Strokkur and Geysir is free to enter.<span class="ref">(Lonely Planet,2015)</span> </p>
+
+              <a name="Seljalandsfoss"><h2>Seljalandsfoss</h2></a>
+              <img class="img-south" src="img/Seljalandsfoss.png" alt="Seljalandsfoss">
+                    <p class="itemP"> From the ring road (the main road in Iceland) you'll see the beautiful high falls at <strong>Seljalandsfoss</strong>, which tumble over a rocky scarp into a deep, green pool. The waterfall drops 60 m (197 ft) and is part of the Seljalands River that has its origin in the volcano glacier Eyjafjallajökull. A (slippery) paths runs around the back of the waterfall, infact, visitors can walk behind the falls into a small cave.</p>
+                         <div id="myModal"><p class="modal">Click to see the waterfall from behind!</p></div>
+                    <p class="itemP"> A few hundred meters  further down to the Þórsmörk road, Gljúfrabúi gushes into a hidden canyon. Excursions buses from/to Skogar and beyond stop a Seljalandsfoss.<span class="ref"> (Lonely Planet,2015)</span> </p>
+
+               <a name="Skógafoss"><h2>Skógafoss</h2></a>
+               <img class="img-south"  src="img/skogafoss.png" alt="Skógafoss">
+                    <p class="itemP"> <strong>Skógafoss</strong> is one of Iceland’s biggest and most beautiful waterfalls with an astounding width of 25 meters (82 feet) and a drop of 62 meters (197 feet).
+                      The waterfall is incorporated in plenty of self-drive tours and vacation packages around the country.
+                      Almost all South Coast tours will visit Skogafoss. Those who rent a car will find this waterfall right by the Ring Road.
+                      The river below Skógafoss holds a large char and salmon population and is thus a favourite spot for fishermen in the summer.
+                      Due to the amount of spray the cascade produces, at least one rainbow is present any time the sun emerges from behind the clouds.
+                      The land underneath the waterfall is very flat, allowing visitors to walk right up to the wall of water.
+                      Skógafoss can also be viewed from the top as a steep staircase leads to an observational platform above the cascade. Many nesting seabirds can be found on the route up.
+                      Legend has it that a settler named Þrasi hid a chest of gold behind Skógafoss. <span class="ref">(Skógafoss | Guide to Iceland, 2021)</span> </p>
+
+              <a name="Reynisfjara"><h2>Reynisfjara</h2></a>
+              <img class="img-south"  src="img/Reynisfjara.png" alt="Reynisfjara">
+                    <p class="itemP"> With its enormous basalt stacks, roaring Atlantic waves and stunning panoramas, <strong>Reynisfjara</strong>is widely considered to be the most beautiful example of Iceland’s black sand beaches.
+                      In 1991, <strong>National Geographic</strong> voted Reynisfjara as one of the <strong>Top 10 non-tropical beaches to visit on the planet.</strong>
+                      Driving to the beach is particularly easy, taking an approximate two and a half hours from the capital.
+                      Upon visiting the beach, travelers will immediately observe rocky sea stacks sitting off the shoreline, known as Reynisdrangar.
+                      According to local Icelandic folklore, these large basalt columns were once trolls trying to pull ships from the ocean to shore.
+                      However, these trolls were dim and went out too late in the night; dawn broke on the horizon, turning the trolls into solid stone.
+                      Visitors to Reynisfjara must be made well aware of the potential dangers present at the beach. First of all, the rolling, roaring waves of Reynisfjara are particularly violent, often pushing far further up the beach than many would expect.
+                      These are called sneaker-waves and they can appear when least expected. Visitors are advised to never turn their back on the waves, and keep a safe distance of at least 30 meters (98 feet). <span class="ref">(Lonely Planet,2015)</span> </p>
+
+             <a name="Jökulsárlón"><h2>Jökulsárlón</h2></a>
+             <img class="img-south"  src="img/jokulsarlon.png" alt="Jökulsárlón">
+                  <p class="itemP"> <strong>Jökulsárlón</strong>, (literally "glacial river lagoon"), is a large glacial lake in southern part of Vatnajökull National Park. Situated at the head of the Breiðamerkurjökull glacier, it developed into a lake after the glacier started receding from the edge of the Atlantic Ocean.
+                    The lake has grown since then at varying rates because of melting of the glaciers.The lake can be seen from Route 1 between Höfn and Skaftafell. It appears as "a ghostly procession of luminous blue icebergs". <span class="ref">(Jökulsárlón, 2021)</span> </p>
+
+      </div>
+
+      <div class="item2">
+          <img class="south-map" src="img/south-map.png" alt="south-map">
+      </div>
+   </div>
+ </section>
+
+ <footer>
+   <div class="footer">
+
+      <div class="foot">
+        <img class="dmu" src="icons/dmu.png" alt="puffin">
+
+        <h1 class="name">Roberta Chioccia<br>P. Number: 2622864</h1>
+      </div>
+
+      <div class="foot-icon">
+        <a href="https://www.facebook.com/"> <img class="fb" src="icons/fb.png" alt="facebook-icon"> </a>
+        <a href="https://www.youtube.com/watch?v=rxuOl2khvxY&t=200s"><img class="yt" src="icons/youtube.png" alt="youtube-icon"></a>
+        <a href="https://www.instagram.com/"><img class="insta" src="icons/insta.png" alt="instagram-icon"></a>
+      </div>
+   </div>
+
+ </footer>
+ <script>
+
+ new jBox('Modal', {
+     width: 600,
+     height: 400,
+     attach: '#myModal',
+     title: '<center>SELJALANDSFOSS</center>',
+     content: '<video id="test" controls><source src="vid/Seljalandsfoss.mp4"></video>'
+ });
+
+    </script>
+</body>
+</html>

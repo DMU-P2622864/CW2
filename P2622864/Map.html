@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Iceland website for all travellers that love adventure.">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="css/master.css"  rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <title>Iceland</title>
+</head>
+
+
+
+  <body>
+    <!--Starting fixed menu-->
+  <section>
+    <input type="checkbox" id="hamburger"/>
+     <label class="menuicon" for="hamburger">
+       <span></span>
+     </label>
+
+     <div id="bar">
+       <div id="logo">
+          <a href="Homepage.html"><img class="logo" src="icons/puffin.png" alt="logo"></a>
+       </div> <!--/end logo-->
+     </div><!--/end bar-->
+
+
+     <nav class="menu-visibility">
+           <ul>
+               <li><a class="home" href="Homepage.html">HOME</a></li>
+               <li><a href="Map.html">MAP</a>
+                   <ul>
+                       <li><a href="west.html">WEST</a></li>
+                       <li><a href="north.html">NORTH</a></li>
+                       <li><a href="south.html">SOUTH</a></li>
+                       <li><a href="east.html">EAST</a></li>
+                   </ul>
+                                        </li>
+                                        <li>
+                   <li><a href="language.html">LANGUAGE</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="Contact.html">CONTACT</a></li>
+           </ul>
+      </nav>
+    </section>
+
+     <!--Finishing fixed menu-->
+  <header>
+        <h1> ICELAND</h1>
+          <div class="containericon">
+           <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
+           <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
+           <a href="http://www.road.is/travel-info/road-conditions-and-weather/"><img class="icon" id="car" src="icons/car.png" alt="car_icon"> </a>
+           <a href="https://straeto.is/en"><img class="icon" src="icons/info.png" id="info" alt="info_icon"></a>
+         </div>
+  </header>
+
+   <!--finishing header-->
+    <article>
+      <section>
+       <h1>MAP</h1>
+         <!--maping the image with the element map-->
+         <img class="map" src="img/map.png" alt="map" usemap="#multilinks">
+         <!--define multiple link-points with map element.Attribute-value 'multilinks'
+         is the connection between the map and img element.-->
+         <map name="multilinks">
+            <!--area defines a linkable object-->
+            <!--rect:indicates rectangular area in image
+            coord are number in pixel from left and top definite point in img-->
+            <area shape="rect" coords="0,0,465,445" href="west.html" alt="west-page">
+            <area shape="rect" coords="465,0,960,445" href="north.html" alt="north-page">
+            <area shape="rect" coords="0,445,465,880" href="south.html" alt="south-page">
+            <area shape="rect" coords="465,445,960,883" href="east.html" alt="east-page">
+         </map>
+     </section>
+
+     <section>
+       <h2>GEOGRAPHY</h2>
+         <div class="flex-container-g">
+            <div class="item-g">
+              <p>Iceland is at the juncture of the North Atlantic and Arctic Oceans. The main island is entirely south of the Arctic Circle, which passes through the small Icelandic island of Grímsey off the main island's northern coast.
+                 The country lies between latitudes 63 and 68°N, and longitudes 25 and 13°W.
+                 Geologically, Iceland is part of the Mid-Atlantic Ridge, a ridge along which the oceanic crust spreads and forms new oceanic crust. This part of the mid-ocean ridge is located above a mantle plume, causing Iceland to be subaerial (above the surface of the sea).
+                 The ridge marks the boundary between the Eurasian and North American Plates, and Iceland was created by rifting and accretion through volcanism along the ridge. <span class="ref">(Iceland, 2021)</span>  </p>
+            </div>
+            <div class="item2-g">
+              <img src="img/geology.jpg" alt="map of iceland with lattitudine and longitudine">
+            </div>
+        </div>
+
+      <h2>GEOLOGY</h2>
+        <div class="flex-container-g">
+              <div class="item-g">
+                <p>A geologically young land, Iceland is the surface expression of the Iceland Plateau, a large igneous province forming as a result of volcanism from the Iceland hotspot and along the Mid-Atlantic Ridge, the latter of which runs right through it.
+                  This means that the island is highly geologically active with many volcanoes including Hekla, Eldgjá, Herðubreið.Iceland has many geysers, including Geysir, from which the English word is derived, and the famous Strokkur, which erupts every 8–10 minutes.
+                  After a phase of inactivity, Geysir started erupting again after a series of earthquakes in 2000. Geysir has since grown quieter and does not erupt often. <span class="ref">(Iceland, 2021)</span>  </p>
+              </div>
+
+              <div class="item2-g">
+                  <img src="img/geology1.jpg" alt="geysir">
+              </div>
+        </div>
+
+        <h2>HISTORY</h2>
+          <div class="flex-container-g">
+            <div class="item-g">
+               <p>What we know of Iceland’s earliest settlers can be largely traced back to the Landnámabók, or the “Book of Settlements”, a five-part medieval manuscript that tells the story of the Norsemen discovering and settling the country in the 9th and 10th century.
+                            Ingólfur Arnarson is credited as Iceland’s first permanent settler. Ingólfur threw overboard two carved pillars and pledged to settle wherever they landed. In due time, the pillars were found in current-day Reykjavík where he settled with his family in the year 874.
+                            Iceland was given its name by a Scandinavian sailor, Flóki Vilgerðarson after he spotted some drift ice in the fjords during an especially brutal winter. Hrafna-Flóki (Flóki of the Ravens), as he is called, was the first Norseman to deliberately set sail to Iceland.
+                            His story is also told in the ancient Landnámabók. <span class="ref">(Iceland, 2021)</span>  </p>
+            </div>
+            <div class="item2-g">
+                   <img src="img/First-settl.png" alt="first settlement">
+            </div>
+          </div>
+
+          <div>
+             <video controls autoplay poster="img/geysir.jpg">
+                <source src="vid/geysir.mp4" type="video/mp4">
+                <source src="vid/geysir.ogv" type="video/ogv">
+                <source src="vid/geysir.webm" type="video/webm">
+            </video>
+                <p class="watch">If you cannot watch the video. <br>Click <a href="vid/trailer.mp4">here</a> to download the video. </p>
+        </div>
+       </section>
+
+       <footer>
+          <div class="footer">
+             <div class="foot">
+                <img class="dmu" src="icons/dmu.png" alt="puffin">
+                <h1 class="name">Roberta Chioccia<br>P. Number: 2622864</h1>
+             </div>
+
+             <div class="foot-icon">
+                 <a href="https://www.facebook.com/"> <img class="fb" src="icons/fb.png" alt="facebook-icon"> </a>
+                 <a href="https://www.youtube.com/watch?v=rxuOl2khvxY&t=200s"><img class="yt" src="icons/youtube.png" alt="youtube-icon"></a>
+                 <a href="https://www.instagram.com/"><img class="insta" src="icons/insta.png" alt="instagram-icon"></a>
+            </div>
+           </div>
+       </footer>
+      </article>
+     </body>
+   </html>

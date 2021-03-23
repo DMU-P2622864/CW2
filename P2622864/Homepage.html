@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Iceland website for all travellers that love adventure.">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="css/master.css"  rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <title>Iceland</title>
+</head>
+
+
+
+
+
+  <body>
+    <!--Starting fixed menu-->
+    <!-- checkbox for the hamb menu-->
+    <input type="checkbox" id="hamburger"/>
+     <label class="menuicon" for="hamburger">
+       <!--create span and style in css as span after and before-->
+       <span></span>
+     </label>
+
+     <div id="bar">
+   	   <div id="logo">
+        <a href="Homepage.html">  <img class="logo" src="icons/puffin.png" alt="logo"> </a>
+  	   </div> <!--/end logo-->
+     </div><!--/end bar-->
+
+     <nav class="menu-visibility">
+        <ul>
+            <li><a href="Homepage.html">HOME</a></li>
+            <li><a href="Map.html">MAP</a>
+                <ul class="submenu">
+                    <li><a href="west.html">WEST</a></li>
+                    <li><a href="north.html">NORTH</a></li>
+                    <li><a href="south.html">SOUTH</a></li>
+                    <li><a href="east.html">EAST</a></li>
+                </ul>
+                                     </li>
+                                     <li>
+                <li><a href="language.html">LANGUAGE</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+        </ul>
+     </nav>
+     <!--Finishing fixed menu-->
+
+    <article>
+        <section class="homepage">
+             <div class="slider">
+                <div class="slide current">
+                   <div class="content">
+                    <h1>ICELAND&nbsp;&nbsp;&nbsp;IS&nbsp;&nbsp;&nbsp;&nbsp;ICE</h1>
+                  </div>
+                </div>
+
+                <div class="slide">
+                   <div class="content">
+                     <h1>ICELAND&nbsp;&nbsp;&nbsp; IS&nbsp;&nbsp;&nbsp; FIRE</h1>
+                   </div>
+                </div>
+
+                <div class="slide">
+                   <div class="content">
+                    <h1>ICELAND&nbsp;&nbsp;&nbsp; IS&nbsp;&nbsp;&nbsp; LIGHTS</h1>
+                   </div>
+                </div>
+
+                <div class="slide">
+                   <div class="content">
+                    <h1>ICELAND&nbsp;&nbsp;&nbsp; IS&nbsp;&nbsp;&nbsp; WATER</h1>
+                  </div>
+               </div>
+             </div>
+
+
+             <div class="buttons">
+                 <button id="prev"><img src="icons/left.png" alt="arrow-left">  </button>
+                 <button id="next"><img src="icons/right.png" alt="arrow-right">  </button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+               <div class="foot">
+                 <img class="dmu" src="icons/dmu.png" alt="puffin">
+                 <h1 class="name">Roberta Chioccia<br>P. Number: 2622864</h1>
+               </div>
+
+               <div class="foot-icon">
+                    <a href="https://www.facebook.com/"> <img class="fb" src="icons/fb.png" alt="facebook-icon"> </a>
+                    <a href="https://www.youtube.com/watch?v=rxuOl2khvxY&t=200s"><img class="yt" src="icons/youtube.png" alt="youtube-icon"></a>
+                    <a href="https://www.instagram.com/"><img class="insta" src="icons/insta.png" alt="instagram-icon"></a>
+              </div>
+          </div>
+       </footer>
+      </article>
+
+     <script>
+         //--------------------------styling the slides
+
+        //const stands for a variable that does not change, while let is a variable that changes
+
+       //assign to the var named slides all the elements that in html are called .slide
+       const slides = document.querySelectorAll('.slide');
+
+       //selecting only one item with query selector and assign it to the var next
+
+       const next = document.querySelector('#next');
+
+       //selecting only one item with the query selector and assign it to var prev
+
+       const prev = document.querySelector('#prev');
+
+
+
+
+       //inside the function nextSlide.
+       //The function Next slide will run repetedly,  when the user is click on the event listener (button events).
+         nextSlide = () => {
+
+         //grab the elements that in html it's called .current
+        current = document.querySelector('.current');
+        // Remove current class
+        current.classList.remove('current');
+        // Check for next slide (siblings are on the same levels)
+        if (current.nextElementSibling) {
+        // if it is true add a current (meaning make it visible as in CSS .current was set to be opacity:1;)
+        //so if it is true add current to the next sibling
+        current.nextElementSibling.classList.add('current');
+        //if else meaning when the browser will render the last slider
+       //go back at the beggining
+       } else {
+        // Add current to start, by putting the index 0 inside the array,is the equivalent of the first div
+        slides[0].classList.add('current');
+       }
+      };
+
+
+       //same rules as before, however if
+      prevSlide = () => {
+
+      current = document.querySelector('.current');
+
+      current.classList.remove('current');
+      //if it is true add current to the previous sibling
+      if (current.previousElementSibling) {
+
+      current.previousElementSibling.classList.add('current');
+      } else {
+      //if else meaning when the browser will render the last slide go back at the previous slide
+      slides[3].classList.add('current');
+      }
+    };
+
+     // Button events
+     // Adding an event listener
+     // The browser knows that on the context next and prev- previously set as variable for the buttons-
+     // On click will run the functions nextSlide and prevSlide
+     next.addEventListener('click',nextSlide);
+     prev.addEventListener('click',prevSlide);
+
+     </script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Iceland website for all travellers that love adventure.">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="css/master.css"  rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <title>Iceland</title>
+  </head>
+
+
+
+
+
+
+
+  <body>
+    <!--Starting fixed menu-->
+    <input type="checkbox" id="hamburger"/>
+     <label class="menuicon" for="hamburger">
+       <span></span>
+     </label>
+
+     <div id="bar">
+   	   <div id="logo">
+          <a href="Homepage.html"><img class="logo" src="icons/puffin.png" alt="logo"></a>
+  	   </div> <!--/end logo-->
+     </div><!--/end bar-->
+
+
+     <nav class="menu-visibility">
+           <ul>
+               <li><a class="home" href="Homepage.html">HOME</a></li>
+               <li><a href="Map.html">MAP</a>
+                   <ul>
+                       <li><a href="west.html">WEST</a></li>
+                       <li><a href="north.html">NORTH</a></li>
+                       <li><a href="south.html">SOUTH</a></li>
+                       <li><a href="east.html">EAST</a></li>
+                   </ul>
+                                        </li>
+                                        <li>
+                   <li><a href="language.html">LANGUAGE</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="Contact.html">CONTACT</a></li>
+           </ul>
+      </nav>
+
+
+     <!--Finishing fixed menu-->
+    <header class="pages">
+        <h1> ICELAND</h1>
+          <div class="containericon">
+           <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
+           <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
+           <a href="http://www.road.is/travel-info/road-conditions-and-weather/"><img class="icon" id="car" src="icons/car.png" alt="car_icon"> </a>
+           <a href="https://straeto.is/en"><img class="icon" src="icons/info.png" id="info" alt="info_icon"></a>
+         </div>
+    </header>
+
+   <!--finishing header-->
+   <article>
+     <h1>Language</h1>
+       <p> Icelandic is a North Germanic language spoken by about 314,000 people, the vast majority of whom live in Iceland where it is the national language. It is most closely related to Faroese and Western Norwegian.
+           The language is more conservative than most other Western European languages. While most of them have greatly reduced levels of inflection (particularly noun declension),
+           Icelandic retains a four-case synthetic grammar (comparable to German, though considerably more conservative and synthetic) and is distinguished by a wide assortment of irregular declensions.
+           Since the written language has not changed much, Icelanders can read classic Old Norse literature created in the 10th through 13th centuries (such as the Eddas and sagas) with relative ease.
+           Icelandic is closely related to Faroese; the written forms of the two languages are very similar, but their spoken forms are not mutually intelligible.
+           It is not mutually intelligible with the continental Scandinavian languages (Danish, Norwegian, and Swedish) and is more distinct from the most widely spoken Germanic languages, English and German, than those three are.
+           Aside from the 300,000 Icelandic speakers in Iceland, it is spoken by about 8,000 people in Denmark, 5,000 people in the United States, and more than 1,400 people in Canada, notably in the region known as New Iceland in Manitoba which was settled by Icelanders beginning in the 1880s.
+           <span class="ref">(Icelandic language, 2021)</span>
+          <br><br><br> Most Icelanders speak English, so you will have no problems if you do not speak any Icelandic. However, any attempts to speak the local language will be much appreciated. <span class="ref">(Lonely Planet,2015)</span> </p>
+
+         <h2 class="basic">HEAR HOW PRONUONCE</h2>
+
+          <div class="cont">
+           <div class="lang-cont">
+             <div class="floatfix">
+              <h3 class="lang">Hello&nbsp;=&nbsp;Halló&nbsp;=</h3>
+              <img onclick="playsound()" class="speak" src="icons/speaker.png" alt="audio-icon">
+              <audio id="audio" style="display:none">
+                 <source src="aud/Hello.mp3" type="audio/mpeg">
+                 <source src="aud/Hello.ogg" type="audio/ogg">
+                 <source src="aud/Hello.wav" type="audio/wav">
+              </audio>
+             </div>
+               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/Hello.mp3">here</a> to download the audio.</p>
+
+
+            <div class="floatfix">
+              <h3 class="lang">Good morning&nbsp;=&nbsp;Góðan daginn&nbsp;=</h3>
+              <img onclick="playSound()" class="speak" src="icons/speaker.png" alt="audio-icon">
+                <audio id="audio1" style="display:none">
+                  <source src="aud/goodMorning.mp3" type="audio/mpeg">
+                  <source src="aud/goodMorning.ogg" type="audio/ogg">
+                  <source src="aud/goodMorning.wav" type="audio/wav">
+                </audio>
+            </div>
+              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodMorning.mp3">here</a> to download the audio.</p>
+
+
+            <div class="floatfix">
+              <h3 class="lang">Good evening&nbsp;=&nbsp;Gott kvöld&nbsp;=</h3>
+              <img onclick="pSound()" class="speak" src="icons/speaker.png" alt="audio-icon">
+              <audio id="audio2" style="display:none">
+                 <source src="aud/goodEvening.mp3" type="audio/mpeg">
+                 <source src="aud/goodEvening.ogg" type="audio/ogg">
+                 <source src="aud/goodEvening.wav" type="audio/wav">
+              </audio>
+            </div>
+              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodEvening.mp3">here</a> to download the audio.</p>
+
+
+            <div class="floatfix">
+              <h3 class="lang">Good bye&nbsp;=&nbsp;Bless&nbsp;=</h3>
+              <img onclick="pS()" class="speak" src="icons/speaker.png" alt="audio-icon">
+              <audio id="audio3" style="display:none">
+                  <source src="aud/goodBye.mp3" type="audio/mpeg">
+                  <source src="aud/goodBye.ogg" type="audio/ogg">
+                  <source src="aud/goodBye.wav" type="audio/wav">
+              </audio>
+            </div>
+              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodBye.mp3">here</a> to download the audio.</p>
+
+
+            <div class="floatfix">
+               <h3 class="lang">Thank you&nbsp;=&nbsp;Takk fyrir&nbsp;=</h3>
+               <img onclick="play()" class="speak" src="icons/speaker.png" alt="audio-icon">
+               <audio id="audio4" style="display:none">
+                   <source src="aud/thankYou.mp3" type="audio/mpeg">
+                   <source src="aud/thankYou.ogg" type="audio/ogg">
+                   <source src="aud/thankYou.wav" type="audio/wav">
+               </audio>
+            </div>
+               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/thankYou.mp3">here</a> to download the audio.</p>
+
+
+            <div class="floatfix">
+               <h3 class="lang">Sorry&nbsp;=&nbsp;Fyrirgefðu&nbsp;=</h3>
+               <img onclick="sound()" class="speak" src="icons/speaker.png" alt="audio-icon">
+               <audio id="audio5" style="display:none">
+                    <source src="aud/Sorry.mp3" type="audio/mpeg">
+                    <source src="aud/Sorry.ogg" type="audio/ogg">
+                    <source src="aud/Sorry.wav" type="audio/wav">
+               </audio>
+             </div>
+
+               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/Sorry.mp3">here</a> to download the audio.</p>
+       </div>
+
+       <div class="right-side">
+               <h3 class="reading-iceland">Reading Icelandic</h3>
+         <div class="read">
+
+           <div class="letter">
+                  <h4>LETTER</h4>
+                      <h5>A</h5>
+                      <h5>D</h5>
+                      <h5>I</h5>
+                      <h5>È</h5>
+           </div>
+           <div class="pronunc">
+                   <h4>PRONUNCIATION</h4>
+                      <h5>OW (AS IN "HOW")</h5>
+                      <h5>DH (AS IN "THAT")</h5>
+                      <h5>YE (AS IN "YET")</h5>
+                      <h5>EE (AS IN "SEE")</h5>
+           </div>
+         </div>
+       </div>
+     </div>
+
+   <footer>
+     <div class="footer">
+
+        <div class="foot">
+          <img class="dmu" src="icons/dmu.png" alt="puffin">
+
+          <h1 class="name">Roberta Chioccia<br>P. Number: 2622864</h1>
+        </div>
+
+        <div class="foot-icon">
+          <a href="https://www.facebook.com/"> <img class="fb" src="icons/fb.png" alt="facebook-icon"> </a>
+          <a href="https://www.youtube.com/watch?v=rxuOl2khvxY&t=200s"><img class="yt" src="icons/youtube.png" alt="youtube-icon"></a>
+          <a href="https://www.instagram.com/"><img class="insta"src="icons/insta.png" alt="instagram-icon"></a>
+        </div>
+     </div>
+    </footer>
+   </article>
+    <script>
+
+    //hidden the controls on audio element and replace the controls
+    //on icons so when the user click on the icons that display the audio, the audio will start.
+
+      playsound = () => {
+
+        let audio = document.getElementById('audio');
+        audio.play();
+      }
+
+      playSound = () => {
+
+        let audio = document.getElementById('audio1');
+        audio.play();
+      }
+
+      pSound = () => {
+
+        let audio = document.getElementById('audio2');
+        audio.play();
+      }
+
+      pS = () => {
+
+        let audio = document.getElementById('audio3');
+        audio.play();
+      }
+
+      play = () => {
+
+        let audio = document.getElementById('audio4');
+        audio.play();
+      }
+
+      sound = () => {
+
+        let audio = document.getElementById('audio5');
+        audio.play();
+      }
+
+    </script>
+  </body>
+</html>

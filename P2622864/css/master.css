@@ -1,0 +1,860 @@
+body{
+  background-color: #dad6d5;
+}
+
+/*starting menu fixed*/
+
+/* -----------------Menu mobile-----------------*/
+a{
+	text-decoration:none;
+}
+
+ul li{
+	list-style:none;
+}
+
+nav {
+ /* back-ground color menu mobile*/
+  background-color:rgba(255,255,255,.9);
+  /*when an element as position fixed means that it always stay fixed
+  even if the page scroll down*/
+  position:fixed;
+  /* z-index property specifies the stack order of an element.
+  So the browser will know that the menu is going to stack over
+  the element with lower stack order*/
+  z-index:1;
+  font-family: 'Architects Daughter', cursive;
+  width:100%;
+  height:auto;
+  margin-top: 40px;
+  /*the menu is hidden*/
+  visibility: hidden;
+  overflow:auto;
+}
+
+/*menu-home-map-language-gallery-contact*/
+nav ul li a {
+  padding-top: 10px;
+  padding-left: 10px;
+  /*display block means that the element take the all width
+  in a new line*/
+  display: block;
+  color:rgb(107, 110, 106);
+  font-size: 16px;
+}
+
+ /*submenu-west-north-south-east*/
+nav ul li ul {
+  padding-left: 10px;
+  font-size:12px;
+}
+
+/*submenu-west-north-south-east*/
+nav ul li ul li a {
+   font-size:12px;
+   border:hidden;
+}
+
+
+/* ----------------- div bar menu ------------------ */
+
+#bar {
+  background-color:rgba(217,214,214);
+  /*height of the bar*/
+  height: 8vh;
+  width: 100vw;
+  /*same rules that are applied before but this time the menu bar
+  is on top of the menu hidden so is going to have a z-index of 2*/
+  z-index:2;
+  position:fixed;
+
+}
+
+#bar #logo {
+  float: right;
+}
+
+.logo{
+  height:54px;
+  padding:0px 10px 20px 0px;
+
+
+}
+/* ----------------- Hamburger animation ------------------ */
+
+#hamburger {
+  /*hidding the toggle checkbox,
+  basically it s like a button but it is hidden
+  as i want display the hamb menu*/
+  display: none;
+}
+
+.menuicon {
+  position: fixed;
+  height: 54px;
+  width: 54px;
+  left:8px;
+  /*as it is on top of the menu hidden and on top of the bar
+  the z-index is 3*/
+  z-index: 3;
+}
+
+/*second-linehamb*/
+.menuicon span {
+  /*display block see the rules applied before*/
+  display: block;
+  top: 20px;
+  width: 40px;
+  height: 3px;
+  left: 8px;
+  background-color: #fff;
+  /* when a position is relative is changing the position of an element from what
+  it would be by default, so in this case the position changed to be 8px from the left
+  and 20 px from top*/
+  position: relative;
+  border-radius: 20px;
+  /* transition determines the property that changes in this case the
+  property changes is transform*/
+  transition: transform 0.3s ease-out;
+}
+
+/*first-third linehamb*/
+
+/* with the after and before it's genererated a content
+ before and after the element content in this case the element content is .menuicon span*/
+.menuicon span::after,
+.menuicon span::before {
+  display: block;
+  content: '';
+  /*by saying position absolute the browser will know that this element is positioned
+  relative to his parent .menuicon*/
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  /* transition determines the property that changes in this case the
+  property changes is transform*/
+  transition: transform 0.3s ease-out;
+}
+
+/*space up the line*/
+.menuicon span::before {
+  margin-top: -10px;
+}
+
+/*space down the line*/
+.menuicon span::after {
+  margin-top: 10px;
+}
+
+/*hamb animation*/
+#hamburger:checked~.menuicon span {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#hamburger:checked~.menuicon span::before {
+  margin-top: 0px;
+}
+
+#hamburger:checked~.menuicon span::after {
+  margin-top: 0px;
+}
+
+#hamburger:checked~.menuicon span::before {
+  transform: rotate(45deg);
+}
+
+#hamburger:checked~.menuicon span::after {
+  transform: rotate(-45deg);
+}
+
+/* ----------------- menu animation appears the menu ------------------ */
+/*show the hidden content when the checkbox is checked*/
+#hamburger:checked~.menu-visibility {
+  visibility: visible;
+}
+/*-------------------end mobile menu-------------------------*/
+
+/* ----------------- horizontal menu ------------------ */
+/*breakpoint when change the menu for the screen over of 980px*/
+@media screen and (min-width: 980px) {
+
+  .menuicon {
+    display: none;
+    /* hidden hambuger menu */
+  }
+
+  #bar #logo {
+    float: left;
+    margin-left: 10px;
+  }
+
+/*-----------------styling the menu in the horizontal line*/
+  nav {
+    z-index: 3;
+    margin: 0px;
+    right: 100px;
+    height: auto;
+    background-color: transparent;
+    width: auto;
+    float: right;
+    visibility: visible;
+    font-family: 'Architects Daughter', cursive;
+    overflow: inherit;
+  }
+
+
+/*home-map-language-gallery-contact on horizontal menu*/
+  nav ul li a {
+    padding: 15px;
+    display: inline;
+    font-size: 20px;
+    color: rgb(107, 110, 106);
+  }
+
+/*when hover  become white*/
+  nav ul li a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+/*display menu-language-gallery-map-contact in line*/
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+
+
+  /* ----------------- dropdown menu west-north-south-east on the horizontal menu ------------------ */
+/*creating the menu and hidden it*/
+  nav ul li ul {
+    position: fixed;
+    height:0;
+    overflow: hidden;
+  }
+
+/*when hover display the submenu(after hover insert the selector) */
+   nav ul li:hover ul {
+    height: auto;
+    padding-top: 14px;
+    position: absolute;
+    right: 0;
+  }
+
+/*style of the dropw-down menu*/
+  nav ul li ul li {
+    font-family: 'Architects Daughter', cursive;
+    font-weight:bolder;
+    float: none;
+    padding: 0;
+    min-width: 10px;
+    border-top: 1px solid rgb(46, 45, 46);
+  }
+
+/*style of the dropdownmenu "line"*/
+  nav ul li ul li a {
+    padding: 16px 32px;
+    display: block;
+    background-color:rgba(217,214,214);
+    color: rgb(107, 110, 106);
+  }
+
+/*when hover the text become white*/
+  nav ul li ul li a:hover {
+    color: rgb(255, 255, 255);
+  }
+}
+/*------------------end horizontal menu------------*/
+/*------------------homepage-------------------------*/
+
+.homepage{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.slider{
+  /*the container has the position relative see the rules applied before*/
+  position: relative;
+  overflow:hidden;
+  /*entire viewport*/
+  height:100vh;
+  width:100vw;
+}
+
+.slide{
+  position: absolute;
+  /*starting on the top corner*/
+  top:0;
+  left:0;
+  /*expanding 100% across-width and 100% height*/
+  width:100%;
+  height: 100%;
+  /*the opacity is set to be invisible*/
+  opacity: 0;
+  /*adding a transition to give the fade effect in js*/
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current{
+  /*it shows as the opacity is one*/
+  opacity:1;
+}
+
+.slide .content{
+  /*position absolute within the slider*/
+  position:absolute;
+  bottom:40px;
+  /*off of the screen so at the beggining you can not see it*/
+  left:-600px;
+  /*opacity invisible*/
+  opacity:0;
+  width:400px;
+  background-color: rgba(218,214,213,0.5);
+  border-radius: 2px;
+  color:rgb(107, 110, 106);
+}
+
+.slide .content h1{
+  font-family: 'Amatic SC', cursive;
+  color:white;
+  text-shadow: 2px 2px rgb(89, 89, 89);
+}
+
+/*slide the content of current slide*/
+.slide.current .content{
+  /*make the opacity 1 so is solid*/
+  opacity:1;
+  /*bring the content over of 600px  on the x axis as before is position was negative of -600*/
+  transform:translateX(600px);
+  /*moving smoothly in all properties(opacity and trasform)*/
+  transition: all 0.7s 0.3s ease-in-out;
+}
+
+.buttons button#next{
+  position: absolute;
+  /*position on the middle of the screen*/
+  top:50%;
+  /*margin on the left*/
+  right:15px;
+}
+
+.buttons button#prev{
+  position: absolute;
+  /*position on the middle of the scrren*/
+  top:50%;
+  /*margin on the right*/
+  left:15px;
+}
+
+.buttons button {
+  /*white background,transparency as the current slider content*/
+  background-color:rgba(218,214,213,0.5);
+  /*no border */
+  border: none;
+  /*make them round*/
+  border-radius: 50%;
+  /*make them same height and width*/
+  height:50px;
+  width:50px;
+  cursor:pointer;
+  /*on click get rid of the outline*/
+  outline:none;
+}
+
+.buttons button:hover{
+  background-color:rgb(155, 195, 249);
+}
+
+/*when the screen is 400px or less the slide disappear*/
+@media(max-width:400px){
+  .slide .content h1{
+    display:none;
+  }
+
+}
+
+/*pseudo-selector grab the first child, and so on for all the 4 imgs class and adding the background img*/
+.slide:first-child{
+  background: url("../img/homepage1.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(2){
+  background: url("../img/homepage2.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(3){
+  background: url("../img/homepage3.jpg") no-repeat center center/cover;
+}
+
+.slide:nth-child(4){
+  background: url("../img/geysir.jpg") no-repeat center center/cover;
+}
+
+
+/*---------------------------header in all the pages except from the homepage-----*/
+header{
+  background-image: url("../img/homepage3.jpg");
+  background-size:cover;
+  width:100vw;
+  max-width:100%;
+  height: 50vh;
+  padding-top:20px;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+}
+
+/*change img background when the screen is 500px or less*/
+@media  screen and (max-width:500px){
+header{
+    background-image: url("../img/homepage2.jpg");
+    height:50vh;
+  }
+}
+
+
+header h1{
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  color:white;
+  text-shadow: 4px 4px #464646;
+  font-size: 85px;
+  letter-spacing: 6px;
+  padding-top:4vh;
+}
+
+.containericon{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.icon{
+  min-width: 4vw; /*keep the icons from shirinking*/
+  height: 7vh;
+  padding-left:2vw;
+  display:block;
+  transition: opacity .2s 0.1s ease-in;
+}
+
+#weather:hover{
+    opacity:0.5;
+}
+
+#currency:hover{
+    opacity:0.4;
+}
+
+#car:hover{
+   opacity:0.3;
+}
+
+#info:hover{
+  opacity:0.2;
+}
+
+
+/*---------------------------End header---------------------------*/
+
+/*--------------------------styling h1---------------------------*/
+  h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 30px;
+  color:rgb(107, 110, 106);
+}
+
+/*------------------------Map page------------------------------*/
+
+/*centering the map*/
+.map {
+  /*it's original size is 960px*/
+  max-width:960px;
+  /*resize for the screen*/
+  width:100%;
+  /*centering the map*/
+  margin-left:50vw;
+  transform: translate(-50%);
+}
+
+
+/*flexbox on the map page*/
+.flex-container-g{
+  display: flex;
+  /*wrap when the screen is resize*/
+  flex-wrap: wrap;
+
+}
+
+/*text-display on the left*/
+.item-g {
+  flex-grow: 1;
+  padding-right:30px;
+  width: 25%;
+}
+
+/*img-display on the right*/
+.item2-g img{
+  flex-grow:1;
+  width:75%;
+  top:30px;
+}
+
+@media  screen and (max-width:540px){
+ /*imgs are positioned on the center*/
+.item2-g{
+  margin-left: 60px;
+  }
+
+}
+
+video{
+  margin:100px 0px 0px 0px;
+  max-width: 100vw;
+  width:100%;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+
+/*-----------------------------starting to edit text and images in WEST,NORTH,SOUTH,EAST PAGES------*/
+
+/* on the left of the screen*/
+h2{
+font-family:'Marker Felt';
+color:#464646;
+text-transform:uppercase;
+margin-left: 20px;
+margin-top:50px;
+}
+
+.img-west, .img-north, .img-south, .img-east{
+  margin-left: 30px;
+  max-width:253px;
+  width:100%;
+}
+
+ p{
+  font-family:'Architects Daughter', cursive;
+  line-height: 30px;
+  margin-left: 20px;
+  font-size: 20px;
+  text-align: justify;
+  color:#464646;
+}
+
+strong{
+  color:#464646;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.ref{
+  font-size: 18px;
+  color:rgb(50, 1, 1);
+  padding:10px;
+}
+
+
+/*text,small img on top of the text*/
+.item {
+  float:left;
+  max-width: 700px;
+  width:100%;
+}
+
+.item2{
+  float:right;
+  transition: transform 0.2s  ease-in-out;
+}
+
+
+ .north-map, .south-map, .east-map, .west-map {
+max-width: 500px;
+margin-top: 200px;
+padding-left: 50px;
+width:100%;
+}
+
+/*when hover on map img zoom on the map itself*/
+.item2:hover{
+  transform: scale(1.2);
+}
+
+.flex-container::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+@media  screen and (max-width:960px){
+
+/*maps img disappear when the screen is less then 960*/
+.item2 .north-map, .south-map, .east-map, .west-map {
+    display:none;
+    margin:0;
+    padding:0;
+}
+
+/*as the body it wasn't take all the space */
+html, body {
+  width:100%;
+  overflow-x: hidden;
+}
+
+.itemP{
+  margin:30px;
+}
+
+}
+
+
+
+/*----------------------------- styling the video jbox model only for the south page------*/
+
+/*styling the box model of the video inside the p*/
+
+
+.modal{
+  font-family:'Architects Daughter', cursive;
+  font-size: 20px;
+  color:#464646;
+  background-color: white;
+  display:inline-block;
+  padding:8px;
+  border-radius:3px;
+  cursor: pointer;
+  transition: color 0.1s ease-in-out;
+}
+
+.modal:hover{
+  color:#adb4bb ;
+}
+
+/*----------------------------------------styling Language section on the homepage--------*/
+
+.basic h2{
+font-size: 50px;
+font-family: 'Amatic SC', cursive;
+}
+
+/*floating audio and translation on the left,
+  floating pronunciation on the right
+  1st floating-------*/
+
+ /*lang-cont contains audio and text and icons' speakers*/
+ .lang-cont{
+   float:left;
+   margin:0;
+ }
+
+/*right-side cointans the letter and pronunciation*/
+.right-side{
+  float:right;
+  background-color:#adb4bb;
+  max-width:300px;
+  width:100%;
+}
+
+/*claer the content after lang-cont*/
+.cont::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/*-----end first floating*/
+
+
+/*styling the 'fake' box on the right*/
+.reading-iceland {
+  padding-left: 50px;
+}
+
+h4{
+  font-family: 'Amatic SC', cursive;
+  font-size:25px;
+  color:white;
+  padding:0px 20px 0px 30px;
+}
+
+h5{
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  color:white;
+  padding-left:40px;
+}
+
+/*floating inside right-side*/
+.letter{
+  float:left;
+}
+
+.pronunc{
+  float:right;
+}
+
+/*clear content after read*/
+.read::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/*end 2floating or floating right*/
+
+/*start 3floating or floating left*/
+
+/*floating text on the left side and speaker icons on the right side-----*/
+/*floating text on the left side*/
+h3{
+  float:left;
+  font-size:20px;
+  font-family:'Marker Felt';
+  color:rgb(107, 110, 106);
+  text-transform:uppercase;
+  margin: 20px 0px 0px 10px;
+}
+
+/*floating icons on the right side*/
+.speak {
+  background-color:#adb4bb;
+  float:right;
+  max-width:32px;
+  width:100%;
+  border-radius: 50%;
+  transition: color .2s .1s ease-in;
+}
+
+.speak:hover{
+  background-color:white;
+}
+
+/*clearing the path after floatfix*/
+
+.floatfix::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+/*finishing floating of the left side*/
+
+.ops{
+  margin-left:10px;
+  font-size:13px;
+  font-family: 'Architects Daughter', cursive;
+}
+
+/*------------------------GALLERY PAGE------------*/
+
+div.gallery {
+  padding: 20px;
+  border: 1px solid  #dad6d5;
+  float: left;
+  width: 300px;
+}
+
+.gall {
+  width: 100%;
+  height: auto;
+}
+
+@media  screen and (max-width:650px){
+
+div.gallery{
+    padding:0;
+    margin:0;
+  }
+}
+
+.gallery-pic::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+/*------------------------CONTACT PAGE-----------*/
+div.contactMe{
+ display:flex;
+ align-items: baseline;
+ justify-content: space-evenly;
+ margin: 250px 0px 250px 0px;
+}
+
+.ic{
+  flex:1;
+  max-width: 150px;
+  width:100%;
+}
+
+div.askPuffin{
+ display:flex;
+ justify-content: center;
+ align-items: baseline;
+}
+
+.middle{
+ max-width:100px;
+ width:100%;
+ height:100px;
+ position: relative;
+ top:25px;
+}
+
+.puffin {
+  margin: 0px 20px 0px 20px;
+  font-family:'Architects Daughter', cursive;
+  line-height: 30px;
+  font-size: 20px;
+  text-align: justify;
+  color:#464646;
+}
+
+/*------------------------FOOTER---------*/
+footer{
+  background-color:white;
+  border-top: 4px solid #adb4bb ;
+  margin-top:50px;
+}
+
+footer .dmu{
+  float:left;
+  padding:20px;
+}
+
+footer .name{
+  float:right;
+  font-family: 'Amatic SC', cursive;
+  font-size: 25px;
+  color: #464646;
+  padding-top:40px;
+}
+
+footer .foot::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+.foot{
+  float:left;
+}
+
+.foot-icon{
+  float:right;
+}
+
+.fb, .yt, .insta{
+  max-width: 50px;
+  width:100%;
+  padding:50px 20px 0px 0px;
+  display:inline-block;
+}
+
+.footer::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+
+/*---------------------------------------END CSS-------------------*/

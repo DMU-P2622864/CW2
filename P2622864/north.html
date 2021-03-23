@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Iceland website for all travellers that love adventure.">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="css/master.css"  rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <title>Iceland</title>
+</head>
+
+
+
+  <body>
+    <!--Starting fixed menu-->
+  <section>
+    <input type="checkbox" id="hamburger"/>
+     <label class="menuicon" for="hamburger">
+       <span></span>
+     </label>
+
+     <div id="bar">
+       <div id="logo">
+          <a href="Homepage.html"><img class="logo" src="icons/puffin.png" alt="logo"></a>
+       </div> <!--/end logo-->
+     </div><!--/end bar-->
+
+
+     <nav class="menu-visibility">
+           <ul>
+               <li><a class="home" href="Homepage.html">HOME</a></li>
+               <li><a href="Map.html">MAP</a>
+                   <ul>
+                       <li><a href="west.html">WEST</a></li>
+                       <li><a href="north.html">NORTH</a></li>
+                       <li><a href="south.html">SOUTH</a></li>
+                       <li><a href="east.html">EAST</a></li>
+                   </ul>
+                                        </li>
+                                        <li>
+                   <li><a href="language.html">LANGUAGE</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="Contact.html">CONTACT</a></li>
+           </ul>
+      </nav>
+    </section>
+
+     <!--Finishing fixed menu-->
+  <header>
+        <h1> ICELAND</h1>
+          <div class="containericon">
+           <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
+           <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
+           <a href="http://www.road.is/travel-info/road-conditions-and-weather/"><img class="icon" id="car" src="icons/car.png" alt="car_icon"> </a>
+           <a href="https://straeto.is/en"><img class="icon" src="icons/info.png" id="info" alt="info_icon"></a>
+         </div>
+  </header>
+
+
+<!--finishing header-->
+<article>
+  <h1>MAP</h1>
+   <!--maping the image with the element map-->
+    <img class="map" src="img/map.png" alt="map" usemap="#multilinks">
+
+   <!--define multiple link-points with map element.Attribute-value 'multilinks'
+     is the connection between the map and img element.-->
+  <map name="multilinks">
+  <!--area defines a linkable object-->
+  <!--rect:indicates rectangular area in image
+      coord are number in pixel from left and top definite point in img-->
+
+      <area shape="rect" coords="470,120,590,200" href="#Goðafoss" alt="Goðafoss">
+      <area shape="rect" coords="290,270,420,350" href="#Horses" alt="Horses">
+      <area shape="rect" coords="660,190,790,255" href="#Hverir" alt="Hverir">
+      <area shape="rect" coords="480,360,600,440" href="#Vatnajökull" alt="Vatnajökull">
+
+</map>
+
+
+    <section>
+
+      <h1>NORTH</h1>
+
+       <div class="flex-container">
+
+          <div class="item">
+
+            <a name="Goðafoss"><h2>Goðafoss</h2></a>
+               <img class="img-north" src="img/godafoss.png" alt="Goðafoss">
+                  <p class="itemP"> <strong>GOðAFOSS</strong> is a waterfall in northern Iceland. In modern Icelandic, the name can be read either as "waterfall of the goð (pagan idols)" or "waterfall of the goði (chieftain)." In 1879-1882, a myth was published according to which the waterfall was named when the lawspeaker Þorgeir Ljósvetningagoði made Christianity the official religion of Iceland in the year 999 or 1000.
+                                    Upon returning home from the Alþingi, Þorgeir supposedly threw his statues of the Norse gods into the waterfall. However, although the story of Þorgeir's role in the adoption of Christianity in Iceland is preserved in Ari Þorgilsson's Íslendingabók, no mention is made of Þorgeir throwing his idols into Goðafoss.
+                                    The legend appears to be a nineteenth-century fabrication. <span class="ref">(Goðafoss, 2021)</span> </p>
+
+            <a name="Horses"><h2>Horses</h2></a>
+                <img class="img-north" src="img/horses.png" alt="Horses">
+                  <p class="itemP">The Icelandic <strong>HORSE</strong> is a breed of horse developed in Iceland. Although the horses are small, at times pony-sized, most registries for the Icelandic refer to it as a horse. Icelandic law prevents horses from being imported into the country and exported animals are not allowed to return. The breed is still used for traditional sheepherding work in its native country, as well as for leisure, showing, and racing.
+                                   The first official Icelandic horse race was held at Akureyri in 1874,and many races are still held throughout the country from April through June. <span class="ref">(Icelandic horse, 2021)</span> </p>
+
+            <a name="Hverir"><h2>Hverir</h2></a>
+               <img class="img-north" src="img/hverir.png" alt="Hverir">
+                  <p class="itemP"> <strong>HVERIR</strong> geothermal fields have the most impressive ones. The sparse landscape, bubbling mud pools, hissing fumaroles and sticky red soil, really make you feel like visiting another planet.Once here, you’ll soon realise why Iceland is named the Land of Fire and Ice. It’s also the closest you’ll ever get to Mars on Earth. :) You only need to see the large volume of steam emitting from the ground to know this is a high-temperature area and one you should take with caution. But before stepping close enough to feel the heat, it’s likely you’ll be able to smell this place first because it REEKS; as,naturally,water heated by volcanoes and geothermal springs, so  it’s going to contain a lot of sulphur. And sulphur stinks of eggs. <span class="ref">(Hverir Geothermal Area in North Iceland | The Culture Map, 2021)</span> </p>
+
+            <a name="Vatnajökull"><h2>Vatnajökull</h2></a>
+                <img class="img-north" src="img/vatnajokull.png" alt="Vatnajökull">
+                  <p class="itemP"> <strong>VATNAJöKULL </strong> (literally "Glacier of Lakes"; sometimes translated as Vatna Glacier in English) is the largest and most voluminous ice cap in Iceland, and the second largest in Europe. Under the ice cap, as under many of the glaciers of Iceland, there are several volcanoes. Eruptions from these volcanoes have led to the development of large pockets of water beneath the ice, which may burst the weakened ice and cause a jökulhlaup (glacial lake outburst flood). During the last ice age, numerous volcanic eruptions occurred under Vatnajökull, creating many subglacial eruptions. <br> Vatnajökull National Park's northern section can be roughly divided in three parts. <br>
+                  <strong>Asbyrgi:</strong> The northern entry. A verdant, forested plain enclosed by vertical canyon walls. The visitor centre is here.<br>
+                  <strong>Vesturdalur:</strong> The middle section, with cavs and fascinating geological anomalies. <br>
+                  <strong>Dettifoss:</strong> This mighty waterfall anchors the park's southern entrance.<br>
+                  A wonderful two-day hike weaves along the canyon, taking in all of the mayor sights en route. If you are not so keen on hiking, rangers are developing a mountain-biking trail through the park.(note that this will be for experienced bikers, not daytrippers).
+                  <span class="ref">(Lonely Planet,2015)</span></p>
+          </div>
+
+          <div class="item2">
+                 <img class="north-map" src="img/north-map.png" alt="north-map">
+          </div>
+     </div>
+
+   </section>
+
+   <footer>
+     <div class="footer">
+
+        <div class="foot">
+          <img class="dmu" src="icons/dmu.png" alt="puffin">
+
+          <h1 class="name">Roberta Chioccia<br>P. Number: 2622864</h1>
+        </div>
+
+        <div class="foot-icon">
+          <a href="https://www.facebook.com/"> <img class="fb" src="icons/fb.png" alt="facebook-icon"> </a>
+          <a href="https://www.youtube.com/watch?v=rxuOl2khvxY&t=200s"><img class="yt" src="icons/youtube.png" alt="youtube-icon"></a>
+          <a href="https://www.instagram.com/"><img class="insta" src="icons/insta.png" alt="instagram-icon"></a>
+        </div>
+     </div>
+
+   </footer>
+  </article>
+ </body>
+</html>

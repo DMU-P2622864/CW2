@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Iceland website for all travellers that love adventure.">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="css/master.css"  rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v0.5.3/dist/jBox.all.min.css" rel="stylesheet">
+    <title>Iceland</title>
+</head>
+
+
+
+  <body>
+    <!--Starting fixed menu-->
+  <section>
+    <input type="checkbox" id="hamburger"/>
+     <label class="menuicon" for="hamburger">
+       <span></span>
+     </label>
+
+     <div id="bar">
+       <div id="logo">
+          <a href="Homepage.html"><img class="logo" src="icons/puffin.png" alt="logo"></a>
+       </div> <!--/end logo-->
+     </div><!--/end bar-->
+
+
+     <nav class="menu-visibility">
+           <ul>
+               <li><a class="home" href="Homepage.html">HOME</a></li>
+               <li><a href="Map.html">MAP</a>
+                   <ul>
+                       <li><a href="west.html">WEST</a></li>
+                       <li><a href="north.html">NORTH</a></li>
+                       <li><a href="south.html">SOUTH</a></li>
+                       <li><a href="east.html">EAST</a></li>
+                   </ul>
+                                        </li>
+                                        <li>
+                   <li><a href="language.html">LANGUAGE</a></li>
+                   <li><a href="gallery.html">GALLERY</a></li>
+                   <li><a href="Contact.html">CONTACT</a></li>
+           </ul>
+      </nav>
+    </section>
+
+     <!--Finishing fixed menu-->
+  <header>
+        <h1> ICELAND</h1>
+          <div class="containericon">
+           <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
+           <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
+           <a href="http://www.road.is/travel-info/road-conditions-and-weather/"><img class="icon" id="car" src="icons/car.png" alt="car_icon"> </a>
+           <a href="https://straeto.is/en"><img class="icon" src="icons/info.png" id="info" alt="info_icon"></a>
+         </div>
+  </header>
+
+<!--finishing header-->
+<article>
+  <h1>MAP</h1>
+    <!--maping the image with the element map-->
+    <img class="map" src="img/map.png" alt="map" usemap="#multilinks">
+    <!--define multiple link-points with map element.Attribute-value 'multilinks'
+     is the connection between the map and img element.-->
+     <map name="multilinks">
+    <!--area defines a linkable object-->
+    <!--rect:indicates rectangular area in image
+      coord are number in pixel from left and top definite point in img-->
+
+      <area shape="rect" coords="2,249,140,340" href="#Kirkjufell" alt="Kirkjufell">
+      <area shape="rect" coords="170,100,320,190" href="#Hvítserkur" alt="Hvítserkur">
+      <area shape="rect" coords="270,360,490,440" href="#Nature" alt="Nature">
+</map>
+
+
+    <section>
+      <a name="WEST"><h1>WEST</h1></a>
+
+        <div class="flex-container">
+           <div class="item">
+
+              <a name="Kirkjufell"><h2>Kirkjufell</h2></a>
+                 <img class="img-west" src="img/kirkufell.png" alt="kirkufell">
+                    <p class="itemP"> <strong>"MT. KIRKJUFELL</strong> (463 m) is the most prominent mountain in Grundarfjörður and a landmark of the fishing town.
+                        The name Kirkjufell means Church Mountain as it is considered to resemble a church.
+                       For the past few years, Mt. Kirkjufell and Kirkjufellsfoss waterfall have become the most popular place for a photo." <span class="ref"> (Mt. Kirkjufell & Kirkjufellsfoss in Grundarfjörður - the ..., 2021).</span>
+                       You will see crowds of visitors with tripods and cameras taking photos like the one above as "was one of the filming locations for Game of Thrones season 6 and 7".<span class="ref"> (Kirkjufell, 2021)</span>
+                       "If you want to climb it ask to the Saga Centre (around £35 for a guide). Two spots involving a rope climb make it dangerous to scale when wet or without local knowledge.<span class="ref"> (Lonely Planet,2015)</span></p>
+
+
+              <a name="Hvítserkur"><h2 class="itemh2">Hvítserkur</h2></a>
+                  <img class="img-west" src="img/Hvitserkur.png" alt="Hvitserkur">
+                     <p class="itemP"> <strong>HVíTSERKUR</strong>, a 15 meter's high monolith or sea-stack, an eroded volcanic dyke. The name Hvítserkur literally means:"hvít-" = white and "-serkur" = a long shirt, the white comes from the color of the guano deposited on its rocks, as several species of birds live on top of Hvítserkur.
+                       The legend goes that Hvítserkur is a petrified troll. The troll lived in Strandir in the Wesfjords and wanted to tear down the bells at Þingeyraklaustur convent. The Icelandic trolls are not Christian and don't like the sound or sight of churches or church-bells.
+                       But, the troll got caught by the first rays of the sun and then turn into stone by daylight.<span class="ref"> (The majestic Hvítserkur Sea Stack - the Troll of North-We..., 2021)</span></p>
+
+              <a name="Nature"><h2 class="itemh2">Nature</h2></a>
+                  <img class="img-west" src="img/nature.png" alt="nature">
+                      <p class="itemP">Shaped by the forces of nature, the, barren landscapes demonstrate the creativity powers of the four basic elements—earth, air, fire, and water—in a dramatic way. Active volcanoes, bright green valleys, glacier-cut fjords, black sand beaches, and roaring rivers are the most distinctive features of the Icelandic landscape.
+                        And although they are very accessible, they still remain untouched by human civilization.<span class="ref">(Nature & Environment, 2021)</span> </p>
+            </div>
+            <div class="item2">
+               <img class="west-map" src="img/west-map.png" alt="west-map"></div>
+         </div>
+       </section>
+       <footer>
+         <div class="footer">
+
+            <div class="foot">
+              <img class="dmu" src="icons/dmu.png" alt="puffin">
+
+              <h1 class="name">Roberta Chioccia<br>P. Number: 2622864</h1>
+            </div>
+
+            <div class="foot-icon">
+              <a href="https://www.facebook.com/"> <img class="fb" src="icons/fb.png" alt="facebook-icon"> </a>
+              <a href="https://www.youtube.com/watch?v=rxuOl2khvxY&t=200s"><img class="yt" src="icons/youtube.png" alt="youtube-icon"></a>
+              <a href="https://www.instagram.com/"><img class="insta" src="icons/insta.png" alt="instagram-icon"></a>
+            </div>
+         </div>
+
+       </footer>
+     </article>
+    </body>
+</html>
