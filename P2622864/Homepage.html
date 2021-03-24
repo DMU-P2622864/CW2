@@ -19,9 +19,9 @@
     <title>Iceland</title>
 </head>
 
-
-
-
+<!--In the proposal the Homepage shows the History saga, the geology and language information, but thought that the page it would have been too long
+    and as a result the user could lose his attention, it was decided that within the home page only a carousel of images would have more impact and make a better impression.
+    Therefore the geology, geography and history information were allocated on the map page. -->
 
   <body>
     <!--Starting fixed menu-->
@@ -38,10 +38,12 @@
   	   </div> <!--/end logo-->
      </div><!--/end bar-->
 
+<!--  starting the nav menu-->
      <nav class="menu-visibility">
         <ul>
             <li><a href="Homepage.html">HOME</a></li>
             <li><a href="Map.html">MAP</a>
+              <!--submenu inside the map-->
                 <ul class="submenu">
                     <li><a href="west.html">WEST</a></li>
                     <li><a href="north.html">NORTH</a></li>
@@ -93,7 +95,12 @@
             </div>
         </section>
 
-        <!--website site creator and contact with floating elements rules by following the lecture-->
+
+        <!--On the website, the footer is slightly different compared with the proposal as there were added the student's information and the DMU's logo
+            for a better result was displayed a background color white with a border.
+            As result the user could understand better the division between the page and the footer-->
+
+        <!--floating elements rules by following the lecture.-->
         <footer>
             <div class="footer">
               <!--floating elements left side-->
@@ -119,7 +126,10 @@
          // I followed partially this tutorial
          // https://www.youtube.com/watch?v=wWWNrANNO1k&t=1554s as I did not included the autoplay.
          // Also I followed the lecture from week 18-19 to put the index's item inside the array.
+
          //--------------------------styling the slides
+
+        //lecture week 18-19.
 
         //const stands for a variable that does not change, while let is a variable that changes
 
@@ -135,7 +145,7 @@
        const prev = document.querySelector('#prev');
 
 
-
+      //following the tutorial on you tube.
 
        //inside the function nextSlide.
        //The function Next slide will run repetedly,  when the user is click on the event listener (button events).
@@ -175,6 +185,7 @@
       }
     };
 
+     // Following the lecture week 18-19. 
      // Button events
      // Adding an event listener
      // The browser knows that on the context next and prev- previously set as variable for the buttons-
