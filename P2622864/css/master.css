@@ -5,6 +5,12 @@ body{
 /*starting menu fixed*/
 
 /* -----------------Menu mobile-----------------*/
+
+/* To create a responsive hamb menu I watched a serie of tutorials on you tube:
+https://www.youtube.com/watch?v=xMTs8tAapnQ&t=573s,
+https://www.youtube.com/watch?v=N5y65O5jFU4,
+https://www.youtube.com/watch?v=2bKnduRYHtI,
+https://www.youtube.com/watch?v=8x1mO1d6-4w*/
 a{
 	text-decoration:none;
 }
@@ -40,18 +46,18 @@ nav ul li a {
   in a new line*/
   display: block;
   color:rgb(107, 110, 106);
-  font-size: 16px;
+  font-size: 18px;
 }
 
  /*submenu-west-north-south-east*/
 nav ul li ul {
-  padding-left: 10px;
-  font-size:12px;
+  padding-left: 15px;
+  font-size:15px;
 }
 
 /*submenu-west-north-south-east*/
 nav ul li ul li a {
-   font-size:12px;
+   font-size:15px;
    border:hidden;
 }
 
@@ -269,7 +275,7 @@ nav ul li ul li a {
 
 /*------------------homepage-------------------------*/
 
-/* for the styling of the carousel slider and how to create it
+/* For the styling of the carousel slider and how to create it
 I followed partially this tutorial
 https://www.youtube.com/watch?v=wWWNrANNO1k&t=1554s as I did not included the autoplay */
 
@@ -544,9 +550,9 @@ margin-top:50px;
 
  p{
   font-family:'Architects Daughter', cursive;
-  line-height: 30px;
+  line-height: 33px;
   margin:20px;
-  font-size: 20px;
+  font-size: 22px;
   text-align: justify;
   color:#464646;
 }
@@ -678,6 +684,7 @@ font-family: 'Amatic SC', cursive;
 /*styling the 'fake' box on the right- legend of the reading icelandic-*/
 .reading-iceland {
   padding-left: 50px;
+
 }
 
 h4{
@@ -710,11 +717,13 @@ h5{
   clear:both;
 }
 
-@media screen and (max-width:400px){
-  /*display the reading icelandic legend at thecenter*/
+@media screen and (max-width:800px){
+  /*display the reading icelandic legend at the center*/
   .right-side{
     margin:30px 30px 30px 30px;
+
   }
+
 
 }
 
@@ -723,6 +732,7 @@ h5{
 /*start 3floating or floating left*/
 
 /*floating text on the left side and speaker icons on the right side-----*/
+
 /*floating text on the left side*/
 h3{
   float:left;
@@ -768,22 +778,27 @@ h3{
 /*------------------------GALLERY PAGE------------*/
 
 div.gallery {
-  padding: 20px;
-  border: 1px solid  #dad6d5;
+  margin:20px;
+  padding:20px;
+  border: 1px solid  white;
   float: left;
-  width: 300px;
 }
 
 .gall {
+  width: 300px;
   width: 100%;
   height: auto;
+}
+.capt{
+  background-color:rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding:10px;
 }
 
 @media  screen and (max-width:650px){
 
-div.gallery{
-    padding:0;
-    margin:0;
+div.gallery,{
+   margin: 10px 10px 0px 10px ;
   }
 }
 
@@ -794,6 +809,8 @@ div.gallery{
 }
 
 /*------------------------CONTACT PAGE-----------*/
+
+/*flexbox on contact page */
 div.contactMe{
  display:flex;
  align-items: baseline;
@@ -801,12 +818,14 @@ div.contactMe{
  margin: 250px 0px 250px 0px;
 }
 
+/*icon imgs on contact page*/
 .ic{
   flex:1;
   max-width: 150px;
   width:100%;
 }
 
+/*flexbox of About me and puffin*/
 div.askPuffin{
  display:flex;
  justify-content: center;
@@ -831,17 +850,21 @@ div.askPuffin{
 }
 
 /*------------------------FOOTER---------*/
+
+/*styling footer*/
 footer{
   background-color:white;
   border-top: 4px solid #adb4bb ;
   margin-top:50px;
 }
 
+/*logo of dmu-floating element */
 footer .dmu{
   float:left;
   padding:20px;
 }
 
+/*student info*/
 footer .name{
   float:right;
   font-family: 'Amatic SC', cursive;
@@ -850,16 +873,19 @@ footer .name{
   padding-top:40px;
 }
 
+/*clearing both path*/
 footer .foot::after{
   content:"";
   display: block;
   clear: both;
 }
 
+/*display dmu logo and student info on the left- floating element*/
 .foot{
   float:left;
 }
 
+/*display link to social networks on the right*/
 .foot-icon{
   float:right;
 }
@@ -870,7 +896,7 @@ footer .foot::after{
   padding:50px 20px 0px 0px;
   display:inline-block;
 }
-
+/*clearing path*/
 .footer::after{
   content:"";
   display: block;
