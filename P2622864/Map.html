@@ -23,44 +23,47 @@
 
 
   <body>
+ <!--The menu and logo instead to be on the header as it appears in the proposal, they were set at the top with a bar nav and with the CSS rules position: fixed; to scroll down at the end of the page.
+     The initial idea was changed because the content on the pages was longer than expected, so the user might be annoying and he/she might wish to change the page.-->
 
-    <!--The menu and logo instead to be on the header as it appears in the proposal, they were set at the top with a bar nav and with the CSS rules position: fixed; to scroll down at the end of the page.
-        The initial idea was changed because the content on the pages was longer than expected, so the user might be annoying and he/she might wish to change the page.-->
-  <section>
-    <input type="checkbox" id="hamburger"/>
-     <label class="menuicon" for="hamburger">
-       <span></span>
-     </label>
+<!--Starting fixed menu-->
+<!-- checkbox for the hamb menu-->
+          <input type="checkbox" id="hamburger"/>
+           <label class="menuicon" for="hamburger">
+             <!--create span and style in css as span after and before-->
+             <span></span>
+           </label>
 
-     <div id="bar">
-       <div id="logo">
-          <a href="Homepage.html"><img class="logo" src="icons/puffin.png" alt="logo"></a>
-       </div>
+           <div id="bar">
+         	   <div id="logo">
+              <a href="Homepage.html">  <img class="logo" src="icons/puffin.png" alt="logo"> </a>
+        	   </div> <!--/end logo-->
+           </div><!--/end bar-->
 
-
-     <nav class="menu-visibility">
-           <ul>
-               <li><a class="home" href="Homepage.html">HOME</a></li>
-               <li><a href="Map.html">MAP</a>
-                   <ul>
-                       <li><a href="west.html">WEST</a></li>
-                       <li><a href="north.html">NORTH</a></li>
-                       <li><a href="south.html">SOUTH</a></li>
-                       <li><a href="east.html">EAST</a></li>
-                   </ul>
-                                        </li>
-                                        <li>
-                   <li><a href="language.html">LANGUAGE</a></li>
-                   <li><a href="gallery.html">GALLERY</a></li>
-                   <li><a href="Contact.html">CONTACT</a></li>
-           </ul>
-      </nav>
-    </section>
-
+      <!--  starting the nav menu-->
+           <nav class="menu-visibility">
+              <ul>
+                  <li><a href="Homepage.html">HOME</a></li>
+                  <li><a href="Map.html">MAP</a>
+                    <!--submenu inside the map-->
+                      <ul class="submenu">
+                          <li><a href="west.html">WEST</a></li>
+                          <li><a href="north.html">NORTH</a></li>
+                          <li><a href="south.html">SOUTH</a></li>
+                          <li><a href="east.html">EAST</a></li>
+                      </ul>
+                                           </li>
+                                           <li>
+                      <li><a href="language.html">LANGUAGE</a></li>
+                      <li><a href="gallery.html">GALLERY</a></li>
+                      <li><a href="Contact.html">CONTACT</a></li>
+              </ul>
+           </nav>
+           <!--Finishing fixed menu-->
      <!--Finishing fixed menu following the same rules of the homepage-->
 
      <!--Changing the header for all the pages, not including the homepage-->
-  <header>
+      <header>
         <h1> ICELAND</h1>
           <div class="containericon">
             <!--All the icons were created in photoshop respecting the colour and layout of the site. Total weight (32 KB)- flexbox model applied on css by following the lecture-->
@@ -69,10 +72,10 @@
            <a href="http://www.road.is/travel-info/road-conditions-and-weather/"><img class="icon" id="car" src="icons/car.png" alt="car_icon"> </a>
            <a href="https://straeto.is/en"><img class="icon" src="icons/info.png" id="info" alt="info_icon"></a>
          </div>
-  </header>
+      </header>
 
    <!--finishing header-->
-    <article>
+      <article>
       <section>
        <h1>MAP</h1>
          <!--maping the image with the element map, the image was created in photoshop to respect the colors and the layout of the entire website.
