@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--same rules of the homepage-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -16,7 +17,6 @@
 
 
   <body>
-    <!--Starting fixed menu-->
   <section>
     <input type="checkbox" id="hamburger"/>
      <label class="menuicon" for="hamburger">
@@ -26,8 +26,7 @@
      <div id="bar">
        <div id="logo">
           <a href="Homepage.html"><img class="logo" src="icons/puffin.png" alt="logo"></a>
-       </div> <!--/end logo-->
-     </div><!--/end bar-->
+       </div>
 
 
      <nav class="menu-visibility">
@@ -49,10 +48,13 @@
       </nav>
     </section>
 
-     <!--Finishing fixed menu-->
+     <!--Finishing fixed menu following the same rules of the homepage-->
+
+     <!--changing the header for all the pages, not including the homepage-->
   <header>
         <h1> ICELAND</h1>
           <div class="containericon">
+            <!--All the icons were created in photoshop respecting the colour and layout of the site. Total weight (32 KB)- flexbox model applied on css by following the lecture-->
            <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
            <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
            <a href="http://www.road.is/travel-info/road-conditions-and-weather/"><img class="icon" id="car" src="icons/car.png" alt="car_icon"> </a>
@@ -64,15 +66,17 @@
     <article>
       <section>
        <h1>MAP</h1>
-         <!--maping the image with the element map-->
+         <!--maping the image with the element map, the image was created in photoshop to respect the colors and the layout of the entire website.
+         Adding, also, the little img on top of the map where user can click on it and find the description of the place easily. Weight of the map (594KB)
+         For every single element has been calculated the weight by reducing its original size otherwise I would not be able to upload all the images,videos and audios elements for a tot weight of 21.8 MB-->
          <img class="map" src="img/map.png" alt="map" usemap="#multilinks">
          <!--define multiple link-points with map element.Attribute-value 'multilinks'
          is the connection between the map and img element.-->
          <map name="multilinks">
             <!--area defines a linkable object-->
             <!--rect:indicates rectangular area in image
-            coord are number in pixel from left and top definite point in img that are linked to the
-            others external page-->
+            coord are number in pixel from left and top definite point in img. These are linked to the
+            others external pages-->
             <area shape="rect" coords="0,0,465,445" href="west.html" alt="west-page">
             <area shape="rect" coords="465,0,960,445" href="north.html" alt="north-page">
             <area shape="rect" coords="0,445,465,880" href="south.html" alt="south-page">
@@ -92,10 +96,12 @@
             </div>
             <!--img display on the right side of the flexbox  model,styled in css with media query for a mobile screen-->
             <div class="item2-g">
+               <!--img taken from wikipedia weight: 56KB-->
               <img src="img/geology.jpg" alt="map of iceland with latitudine and longitudine">
             </div>
         </div>
 
+       <!--Same rules applied previously-->
       <h2>GEOLOGY</h2>
         <div class="flex-container-g">
               <div class="item-g">
@@ -105,6 +111,7 @@
               </div>
 
               <div class="item2-g">
+                  <!--img taken from wikipedia weight: 41 KB-->
                   <img src="img/geology1.jpg" alt="geysir">
               </div>
         </div>
@@ -123,19 +130,19 @@
           </div>
       <!--end of flexbox-->
 
-      <!--Video of geysir controls palyback up to the user if play or not-->
+      <!--Video of geysir controls playback up to the user if play or not-->
           <div>
              <video controls poster="img/geysir.jpg">
-                <source src="vid/geysir.mp4" type="video/mp4">
-                <source src="vid/geysir.ogv" type="video/ogv">
-                <source src="vid/geysir.webm" type="video/webm">
+                <source src="vid/geysir.mp4" type="video/mp4"> <!--edited in Premiere for a durantion of 5s, weight: 7MB-->
+                <source src="vid/geysir.ogv" type="video/ogv"> <!-- 1.4 MB-->
+                <source src="vid/geysir.webm" type="video/webm"> <!-- 3.6MB-->
             </video>
             <!--video fallback-->
-                <p class="watch">If you cannot watch the video. <br>Click <a href="vid/geysir.mp4">here</a> to download the video. </p>
+                <p class="watch">If you cannot watch the video. <br>Click <a href="vid/geysir.mp4">HERE</a> to download the video. </p>
         </div>
        </section>
 
-      <!--website site creator and contact-->
+      <!--website site creator and contact same rules of the homepage-->
        <footer>
           <div class="footer">
              <div class="foot">

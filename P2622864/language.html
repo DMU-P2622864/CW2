@@ -65,7 +65,7 @@
      <!--Finishing fixed menu-->
     <header class="pages">
         <h1> ICELAND</h1>
-        <!--creating icons to link to external website-->
+        <!--creating icons to link to external website same rules applied on the map page-->
           <div class="containericon">
            <a href="https://en.vedur.is/weather/forecasts/areas/"><img class="icon" id="weather" src="icons/weather.png"  alt="weather_icon"></a>
            <a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=GBP&To=ISK"><img class="icon" id="currency" src="icons/currency.png" alt="currency_icon"></a>
@@ -77,6 +77,7 @@
    <!--finishing header-->
    <article>
      <h1>Language</h1>
+       <!--explaning the origin of the Icelandic-->
        <p> Icelandic is a North Germanic language spoken by about 314,000 people, the vast majority of whom live in Iceland where it is the national language. It is most closely related to Faroese and Western Norwegian.
            The language is more conservative than most other Western European languages. While most of them have greatly reduced levels of inflection (particularly noun declension),
            Icelandic retains a four-case synthetic grammar (comparable to German, though considerably more conservative and synthetic) and is distinguished by a wide assortment of irregular declensions.
@@ -87,6 +88,7 @@
            <span class="ref">(Icelandic language, 2021)</span>
           <br><br><br> Most Icelanders speak English, so you will have no problems if you do not speak any Icelandic. However, any attempts to speak the local language will be much appreciated. <span class="ref">(Lonely Planet,2015)</span> </p>
 
+         <!--providing the basic words and hearing the pronunciation on click (translated from google edited in Audition)-->
          <h2 class="basic">HEAR HOW PRONUONCE</h2>
           <!-- texts, audios and icons display on the left side for laptop
           taking the entire width of mobile screen, styled as floting elements in css-->
@@ -94,6 +96,7 @@
            <div class="lang-cont">
              <div class="floatfix">
               <h3 class="lang">Hello&nbsp;=&nbsp;Halló&nbsp;=</h3>
+              <!--icons were edited with photoshop as I want to display on top of the speaker the Icelandic flag-->
               <img onclick="playsound()" class="speak" src="icons/speaker.png" alt="audio-icon">
               <!--do not display the controls on the audio elements styled below with js-->
               <audio id="audio" style="display:none">
@@ -102,10 +105,10 @@
                  <source src="aud/Hello.wav" type="audio/wav">
               </audio>
              </div>
-             <!--fallback in case the audios do notwork-->
-               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/Hello.mp3">here</a> to download the audio.</p>
+             <!--fallback in case the audios do not work-->
+               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/Hello.mp3">HERE</a> to download the audio.</p>
 
-
+            <!--following the same rules above -->
             <div class="floatfix">
               <h3 class="lang">Good morning&nbsp;=&nbsp;Góðan daginn&nbsp;=</h3>
               <img onclick="playSound()" class="speak" src="icons/speaker.png" alt="audio-icon">
@@ -115,7 +118,7 @@
                   <source src="aud/goodMorning.wav" type="audio/wav">
                 </audio>
             </div>
-              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodMorning.mp3">here</a> to download the audio.</p>
+              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodMorning.mp3">HERE</a> to download the audio.</p>
 
 
             <div class="floatfix">
@@ -127,7 +130,7 @@
                  <source src="aud/goodEvening.wav" type="audio/wav">
               </audio>
             </div>
-              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodEvening.mp3">here</a> to download the audio.</p>
+              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodEvening.mp3">HERE</a> to download the audio.</p>
 
 
             <div class="floatfix">
@@ -139,7 +142,7 @@
                   <source src="aud/goodBye.wav" type="audio/wav">
               </audio>
             </div>
-              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodBye.mp3">here</a> to download the audio.</p>
+              <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/goodBye.mp3">HERE</a> to download the audio.</p>
 
 
             <div class="floatfix">
@@ -151,7 +154,7 @@
                    <source src="aud/thankYou.wav" type="audio/wav">
                </audio>
             </div>
-               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/thankYou.mp3">here</a> to download the audio.</p>
+               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/thankYou.mp3">HERE</a> to download the audio.</p>
 
 
             <div class="floatfix">
@@ -164,11 +167,12 @@
                </audio>
              </div>
 
-               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/Sorry.mp3">here</a> to download the audio.</p>
+               <p class="ops"> Opsss, your browser does not support the audio. Click <a href="aud/Sorry.mp3">HERE</a> to download the audio.</p>
        </div>
        <!--finishing audios and text-->
 
-       <!-- Legend display on the right part of the laptop screen, resize on the mobile screen -->
+       <!-- Legend display on the right part of the laptop screen, on mobile screen with @media for screen mobile the legend was centered.
+        Floating element rules applied in CSS-( little example to how read Icelandic) -->
        <div class="right-side">
                <h3 class="reading-iceland">Reading Icelandic</h3>
          <div class="read">
@@ -212,8 +216,10 @@
 
     <script>
 
-    // When the user click on the icons that display the audio, the audio will start.
+    // When the user click on the icons that display the speakers, the audio will start.
     // To play the sound I followed the lab tutorial of week 18-19, by getting the element by id.
+    // Instead to have the classic controls for the audio I did prefer that the user are able to hover And
+    // click on the speaker icons as it would be more interactive and intuitive.
       playsound = () => {
 
         let audio = document.getElementById('audio');

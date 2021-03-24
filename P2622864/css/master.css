@@ -784,19 +784,22 @@ div.gallery {
   float: left;
 }
 
+/*img on gallery*/
 .gall {
-  width: 300px;
+  max-width: 300px;
   width: 100%;
   height: auto;
 }
+
+/*text on gallery*/
 .capt{
   background-color:rgba(255, 255, 255, 0.5);
-  text-align: center;
-  padding:10px;
+  padding:12px;
 }
 
 @media  screen and (max-width:650px){
 
+/*centering the gallery on screen less of 650*/
 div.gallery,{
    margin: 10px 10px 0px 10px ;
   }
@@ -805,7 +808,7 @@ div.gallery,{
 .gallery-pic::after{
   content:"";
   display: block;
-  clear: both;
+  clear: left;
 }
 
 /*------------------------CONTACT PAGE-----------*/
@@ -832,6 +835,7 @@ div.askPuffin{
  align-items: baseline;
 }
 
+/*icon puffin next to the text*/
 .middle{
  max-width:100px;
  width:100%;
@@ -840,6 +844,7 @@ div.askPuffin{
  top:25px;
 }
 
+/*text paragraph*/
 .puffin {
   margin: 0px 20px 0px 20px;
   font-family:'Architects Daughter', cursive;
