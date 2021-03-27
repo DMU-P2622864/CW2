@@ -46,7 +46,7 @@ nav ul li a {
   in a new line*/
   display: block;
   color:rgb(107, 110, 106);
-  font-size: 18px;
+  font-size: 15px;
 }
 
  /*submenu-west-north-south-east*/
@@ -66,9 +66,10 @@ nav ul li ul li a {
 
 #bar {
   background-color:rgba(217,214,214);
-  /*height of the bar*/
-  height: 8vh;
-  width: 100vw;
+  /*height of the bar as when the mobile screen was turn in horizontal the bar was cut*/
+  height: auto;
+  max-width: 100vw;
+  width:100%;
   /*same rules that are applied before but this time the menu bar
   is on top of the menu hidden so is going to have a z-index of 2*/
   z-index:2;
@@ -82,7 +83,7 @@ nav ul li ul li a {
 
 .logo{
   height:54px;
-  padding:0px 10px 20px 0px;
+  padding-right: 10px;
 
 
 }
@@ -410,7 +411,7 @@ header{
   background-size:cover;
   width:100vw;
   max-width:100%;
-  height: 50vh;
+  height: auto;
   padding-top:20px;
   background-repeat: no-repeat;
   border-radius: 2px;
