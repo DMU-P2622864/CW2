@@ -46,18 +46,18 @@ nav ul li a {
   in a new line*/
   display: block;
   color:rgb(107, 110, 106);
-  font-size: 15px;
+  font-size: 18px;
 }
 
  /*submenu-west-north-south-east*/
 nav ul li ul {
   padding-left: 15px;
-  font-size:13px;
+  font-size:15px;
 }
 
 /*submenu-west-north-south-east*/
 nav ul li ul li a {
-   font-size:10px;
+   font-size:15px;
    border:hidden;
 }
 
