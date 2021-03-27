@@ -494,8 +494,9 @@ header h1{
 
 /*flexbox on the map page*/
 .flex-container-g{
-  display:column;
-  justify-content: flex-start;
+  display:flex;
+  flex-wrap: wrap;
+
 }
 
 /*text-display on the left*/
@@ -506,8 +507,8 @@ header h1{
 /*img-display on the right*/
 .item2-g img{
  flex-grow: 1;
- align-items: center;
- margin-left: 10px;
+ margin-left: 30px;
+ max-width:300px;
 }
 
 @media screen and (min-width: 980px) {
@@ -525,7 +526,9 @@ header h1{
   .item2-g img{
     flex-grow:1;
     width:75%;
-    top:30px;
+    top:60px;
+    max-width: 350px;
+    width:100%;
   }
 
 }
@@ -809,7 +812,7 @@ div.gallery {
 @media  screen and (max-width:650px){
 
 /*centering the gallery on screen less of 650*/
-div.gallery,{
+div.gallery{
    margin: 10px 10px 0px 10px ;
   }
 }
