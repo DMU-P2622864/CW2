@@ -345,6 +345,8 @@ https://www.youtube.com/watch?v=wWWNrANNO1k&t=1554s as I did not included the au
 }
 
 .buttons button#next{
+  height:50px;
+  width:50px;
   position: absolute;
   /*position on the middle of the screen*/
   top:50%;
@@ -353,6 +355,8 @@ https://www.youtube.com/watch?v=wWWNrANNO1k&t=1554s as I did not included the au
 }
 
 .buttons button#prev{
+  height:50px;
+  width:50px;
   position: absolute;
   /*position on the middle of the scrren*/
   top:50%;
