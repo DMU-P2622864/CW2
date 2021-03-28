@@ -878,16 +878,20 @@ footer{
 /*logo of dmu-floating element */
 footer .dmu{
   float:left;
-  padding:20px;
+  margin: 50px 0px 0px 20px;
+  padding-right:30px;
+  /*edited on ps 50px width 52pxheight*/
+  max-width:50px;
+  width:100%;
+
 }
 
 /*student info*/
 footer .name{
   float:right;
   font-family: 'Amatic SC', cursive;
-  font-size: 25px;
+  font-size: 30px;
   color: #464646;
-  padding-top:40px;
 }
 
 /*clearing both path*/
@@ -908,7 +912,8 @@ footer .foot::after{
 }
 
 .fb, .yt, .insta{
-  max-width: 50px;
+  /*editing the width and height on ps 32px width 32 px height*/
+  max-width:32px;
   width:100%;
   padding:50px 20px 0px 0px;
   display:inline-block;
